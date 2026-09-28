@@ -78,12 +78,33 @@ to
 ```
 Now, we're in the correct conda environment we can set-up the Python libraries that we will use throughout the project. There are a number of ways to install these Python packages, first when inside the conda environment we use:
 ```
-$ conda install numpy matplotlib requests
+$ conda install numpy scipy matplotlib notebook pandas seaborn requests
 ```
 Some packages require a different channel in order to install correctly. To get these libraries we need
 ```
 conda install conda-forge::vector conda-forge::uproot conda-forge::lmfit conda-forge::atlasopenmagic
 ```
+
+
+### Jupyter 
+
+Now we should have all of the Python libraries necessary to run the code inside the Jupyter Notebooks that we'll use throughout the project. If you are working from inside your terminal then we need to launch a Jupyter session, we can do this by fist navigating to the desired directory
+```
+$ cd <directory_we_want>
+$ jupyter notebook --no-browser
+```
+Which outputs a large set of logs and diagnostics containing the following instructions
+```
+...
+[C 2026-09-28 17:26:20.627 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:/Users/username/Library/Jupyter/runtime/jpserver-12728-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8888/tree?token=674c8d3d4f83ce598e8f72e76c152830e089847dcd6f0142
+        http://127.0.0.1:8888/tree?token=674c8d3d4f83ce598e8f72e76c152830e089847dcd6f0142
+```
+Copying the URL or opening the .html file will connect the Jupyter session to the directory we ran the command in. Now we'll be able to run code within any Jupyter notebooks (.ipynb files).
 
 
 
