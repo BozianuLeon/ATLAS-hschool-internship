@@ -6,7 +6,6 @@
 - Jupyter Notebooks
 - Git
 - Terminal/preferred Integrated Development Environment (IDE)
-- 
 
 ## Set-up Instructions
 
@@ -47,7 +46,7 @@ annotated-types             0.6.0            py313hca03da5_1
 which prints a list of the currently installed packages.
 
 Among the most useful features of Conda is the creation of [environments](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html). These act as separate instances of Python that can have different libraries installed. Once they are set-up you can return to them at any time and use the same packages as before. A helpful [cheat sheet](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) contains many frequently useful commands. 
-To make an environment is very easy, just use
+To make an environment is very easy, just use:
 ```
 $ conda create --name <your-fave-env-name>
 ```
