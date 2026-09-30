@@ -48,24 +48,24 @@ which prints a list of the currently installed packages.
 Among the most useful features of Conda is the creation of [environments](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html). These act as separate instances of Python that can have different libraries installed. Once they are set-up you can return to them at any time and use the same packages as before. A helpful [cheat sheet](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) contains many frequently useful commands. 
 To make an environment is very easy, just use:
 ```
-$ conda create --name <your-fave-env-name>
+$ conda create --name cern_project_env
 ```
 when conda asks you to proceed, type `y`:
 ```
 proceed ([y]/n)?
 ```
 
-This will create an environment called `<your-fave-env-name>` which you can see has been created and added to the list of existing current environments. Try it out with:
+This will create an environment called `cern_project_env` which you can see has been created and added to the list of existing current environments. Try it out with:
 ```
 $ conda info --envs
 conda environments:
 
    base          *  /home/username/Anaconda3
-   <your-fave-env-name>   /home/username/Anaconda3/envs/<your-fave-env-name>
+   cern_project_env   /home/username/Anaconda3/envs/cern_project_env
 ```
 To activate the environment you can run:
 ```
-conda activate <your-fave-env-name>
+conda activate cern_project_env
 ```
 And you'll know this has worked because your terminal will have changed from something like:
 ```
@@ -73,7 +73,7 @@ And you'll know this has worked because your terminal will have changed from som
 ```
 to 
 ```
-(<your-fave-env-name>) username@laptop some_directory $ 
+(cern_project_env) username@laptop some_directory $ 
 ```
 Now, we're in the correct conda environment we can set-up the Python libraries that we will use throughout the project. There are a number of ways to install these Python packages, first when inside the conda environment we use:
 ```
