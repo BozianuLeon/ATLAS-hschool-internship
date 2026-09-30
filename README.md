@@ -1,4 +1,4 @@
-# Short-term ATLAS Internship
+# Short-term ATLAS Internship Repository
 
 ## Requirements
 - Python
